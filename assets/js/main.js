@@ -39,7 +39,7 @@ var textureLoader = new THREE.TextureLoader();
 
 var sunRadius=200
 
-var texture = textureLoader.load('/obj/sun.jpg');
+var texture = textureLoader.load('obj/sun.jpg');
 var geometry = new THREE.SphereGeometry(sunRadius/10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
 var sun = new THREE.Mesh(geometry, material);
@@ -47,7 +47,7 @@ scene.add(sun);
 
 
 
-var texture = textureLoader.load('/obj/mercury.jpg');
+var texture = textureLoader.load('obj/mercury.jpg');
 
 var geometry = new THREE.SphereGeometry(2.4 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -56,7 +56,7 @@ mercury.position.x = -58 / 10 - sunRadius/10
 scene.add(mercury);
 
 
-var texture = textureLoader.load('/obj/venus.jpg');
+var texture = textureLoader.load('obj/venus.jpg');
 
 var geometry = new THREE.SphereGeometry(6 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -64,7 +64,7 @@ var venus = new THREE.Mesh(geometry, material);
 venus.position.x = -108 / 10 - sunRadius / 10
 scene.add(venus);
 
-var texture = textureLoader.load('/obj/earth.jpg');
+var texture = textureLoader.load('obj/earth.jpg');
 
 var geometry = new THREE.SphereGeometry(6.3 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
