@@ -72,7 +72,7 @@ var earth = new THREE.Mesh(geometry, material);
 earth.position.x = -149 / 10 - sunRadius / 10
 scene.add(earth);
 
-var texture = textureLoader.load('/obj/mars.jpg');
+var texture = textureLoader.load('obj/mars.jpg');
 
 var geometry = new THREE.SphereGeometry(3.4 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -80,7 +80,7 @@ var mars = new THREE.Mesh(geometry, material);
 mars.position.x = -228 / 10 - sunRadius / 10
 scene.add(mars);
 
-var texture = textureLoader.load('/obj/jupiter.jpg');
+var texture = textureLoader.load('obj/jupiter.jpg');
 
 var geometry = new THREE.SphereGeometry(70 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -88,7 +88,7 @@ var jupiter = new THREE.Mesh(geometry, material);
 jupiter.position.x = -778 / 10 - sunRadius / 10
 scene.add(jupiter);
 
-var texture = textureLoader.load('/obj/saturn.jpg');
+var texture = textureLoader.load('obj/saturn.jpg');
 
 var geometry = new THREE.SphereGeometry(58.2 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -96,7 +96,7 @@ var saturn = new THREE.Mesh(geometry, material);
 saturn.position.x = -1434 / 10 - sunRadius / 10
 scene.add(saturn);
 
-var texture = textureLoader.load('/obj/uranus.jpg');
+var texture = textureLoader.load('obj/uranus.jpg');
 
 var geometry = new THREE.SphereGeometry(25.3 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
@@ -104,7 +104,7 @@ var uranus = new THREE.Mesh(geometry, material);
 uranus.position.x = -2871 / 10 - sunRadius / 10
 scene.add(uranus);
 
-var texture = textureLoader.load('/obj/neptune.png');
+var texture = textureLoader.load('obj/neptune.png');
 
 var geometry = new THREE.SphereGeometry(24.6 / 10, 20, 20);
 var material = new THREE.MeshLambertMaterial({ map: texture });
